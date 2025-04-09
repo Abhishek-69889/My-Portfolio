@@ -11,3 +11,13 @@ cncl.addEventListener('click', () => {
     navList.classList.remove('active');
     navList.classList.add('inactive');
 });
+
+
+// loader
+
+
+window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+});
+
