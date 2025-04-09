@@ -272,7 +272,7 @@
     .link_container {
         width: 40vw;
         height: auto;
-        margin-top: -300px;
+        /* margin-top: -300px; */
     }
 
     .link_container_content h3 {
