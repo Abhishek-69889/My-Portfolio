@@ -1,0 +1,400 @@
+:root{
+    --sienna: #b64809;
+    --saddle-brown: #853304;
+    --antique-white: #f6ebd5;
+    --white-2: #fcf6e8;
+    --sienna-dark: #b64707;
+    --dark-slate-blue: #204476;
+    --olive-drab: #4d820c;
+    --sandy-brown: #e8a66d;
+    --wheat: #f8dfae;
+    --cornflower-blue: #85ade5;
+    --light-green: #c7e99b;
+    --royal-blue: #375f97;
+    --white: white;
+    --black: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative; /* Needed for absolute overlay positioning */
+    background-image: url('bg.png'); /* Replace with your image */
+    background-size: 20%;
+    background-position: center;
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
+    margin: 0;
+    padding: 0;
+    color: var(--sienna);
+    font-family: 'Roboto Mono', monospace;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f6ebd5ad; /* Adjust color and opacity */
+    z-index: -1; /* Keeps the overlay behind content */
+}
+
+/* Ensuring content remains above overlay */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 8vw;
+    position: relative;
+}
+.header_ul{
+    display: flex;
+    gap: 30px;
+}
+
+.logo{
+    color: var(--sienna-dark);
+    font-size: 4vmin;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+
+.header_ul li a{
+    text-decoration: none;
+    color: var(--sienna);
+    font-size: 3vmin;
+    font-weight: 400;
+}
+
+.second_head i{
+    color: var(--sienna);
+    font-size: 3vmin;
+    font-weight: 400;
+    display: none;
+}
+.second_head{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* gap: 10px; */
+}
+
+.cross{
+    display: none;
+    font-size: 4vw;
+    /* text-align: center; */
+}
+
+/* About */
+
+
+.head_box{
+    width: 100%;
+    height: 60px;
+    background-color: var(--sandy-brown);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 3px solid var(--saddle-brown);
+    border-top-right-radius:20px ;
+    border-top-left-radius:20px ;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: var(--antique-white);
+    border-radius: 50%;
+    border: 3px solid var(--saddle-brown);
+}
+
+.input_field{
+    width: 60%;
+    height: 30px;
+    background-color: var(--antique-white);
+    border-radius:10px ;
+    border: 3px solid var(--saddle-brown);
+    padding-left: 20px;
+    padding-top: 2px;
+    /* text-align: center; */
+}
+
+.reload{
+    width: 30px;
+    height: 30px;
+    background-color: var(--antique-white);
+    border-radius: 10px;
+    border: 3px solid var(--saddle-brown);
+    text-align: center;
+    padding-top: 4px;
+    font-weight: 700;
+}
+
+.about_container{
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    border-left: 3px solid var(--saddle-brown);
+    border-top: 3px solid var(--saddle-brown);
+    border-right: 6px solid var(--saddle-brown);
+    border-bottom: 6px solid var(--saddle-brown);
+    margin-left: 600px;
+    
+}
+
+.about_content{
+    height: calc(100% - 60px);
+    background-color: var(--antique-white);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.about_content h3{
+    padding: 20px;
+}
+
+.about_content p{
+    padding: 15px;
+}
+
+/* Skill */
+
+
+.skill_container{
+    width: 700px;
+    height: 90vh;
+    margin-left: 170px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+.skill_container_head{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.42vw;
+    color: var(--saddle-brown);
+}
+
+.skill_container_head div{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2vw;
+    color: var(--saddle-brown);
+}
+
+
+
+#skills {
+    text-align: center;
+    padding: 10px;
+    
+}
+/* Skills Container */
+.skills-container {
+
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Skill Cards */
+.skill-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--sandy-brown);
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--antique-white);
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card h3 {
+    color: var(--saddle-brown);
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-card li strong{
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--saddle-brown);
+}
+
+
+/* links */
+
+.link_container{
+    width: 600px;
+    height: 350px;
+    margin-left: 900px;
+}
+
+.link_head{
+    width: 100%;
+    height: 50px;
+    font-size: 1.42vw;
+    color: var(--saddle-brown);
+    background-color: var(--sandy-brown);
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    border: 3px solid var(--saddle-brown);
+    border-top-right-radius:20px ;
+    border-top-left-radius:20px ;
+    gap: 30px;
+    padding-left: 10px;
+}
+
+.circle_main{
+    display: flex;
+    gap: 10px;
+}
+
+.link_container_head{
+    margin-left: 20%;
+}
+
+.link_container_content{
+    height: calc(100% - 50px);
+    background-color: var(--antique-white);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.link_container_content h3{
+    padding: 10px;
+    font-size: 2vw;
+}
+
+.link_container_content p{
+    padding: 5px;
+    /* font-size: 1.2vw; */
+    padding-left: 20px;
+    
+}
+
+.links{
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+.links a{
+    font-size: 30px;
+    color: var(--sienna);
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/* DSA container */
+.dsa_container{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-left: 3px solid var(--royal-blue);
+    border-top: 3px solid var(--royal-blue);
+    border-right: 6px solid var(--royal-blue);
+    border-bottom: 6px solid var(--royal-blue);
+    color: var(--royal-blue);
+}
+
+
+/* ///////////////////////////// */
+
+.dsa_head_box {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    padding-left: 10px;
+    position: relative; /* Required for absolute positioning of overlay */
+    background-image: url('head.png');
+    background-size: 20%;
+    background-repeat: repeat;
+    background-position: center;
+    /* border-left: 2px solid var(--royal-blue); */
+    /* border-top: 2px solid var(--royal-blue); */
+    /* border-right: 2px solid var(--royal-blue); */
+    border-bottom: 2px solid var(--royal-blue);
+}
+
+.skill_head_box {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    padding-left: 10px;
+    position: relative; /* Required for absolute positioning of overlay */
+    /* background-image: url('head.png'); */
+    background-size: 20%;
+    background-repeat: repeat;
+    background-position: center;
+    /* border-left: 2px solid var(--royal-blue); */
+    /* border-top: 2px solid var(--royal-blue); */
+    /* border-right: 2px solid var(--royal-blue); */
+    /* border-bottom: 2px solid var(--royal-blue); */
+}
+
+/* Overlay Effect */
+.dsa_head_box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 105, 225, 0.632); /* Change opacity & color as needed */
+    z-index: 0;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+}
+
+/* Ensure content stays above overlay */
+.dsa_head_box > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ///////////////////////////////////// */
+
+.dsa-links {
+    display: flex;
+    gap: 40px;
+    /* justify-content: center; */
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.dsa-links a img{
+    width: 45px;
+}
+
+.skilledIn{
+    /* background-color: #85ade5; */
+    padding: 10px;
+}
+
