@@ -11,6 +11,7 @@
     <title>Abhishek.Dev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="i.css">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
@@ -62,141 +63,198 @@
             <div class="about_dsa_combine">
 
                 <!-- about -->
-    
+
                 <div class="about_container">
                     <div class="head_box">
                         <div class="circle"></div>
                         <div class="circle"></div>
                         <div class="circle"></div>
-    
+
                         <div class="input_field">https://about.me</div>
                         <div class="reload"><i class="ri-reset-left-fill"></i></div>
                     </div>
                     <div class="about_content">
                         <h3>ABOUT ME</h3>
-                        <p> Hi, I'm Abhishek Tiwari an Aspiring Software Engineer, Web Developer, and Problem Solver with a
+                        <p> Hi, I'm Abhishek Tiwari an Aspiring Software Engineer, Web Developer, and Problem Solver
+                            with a
                             passion for creating efficient, scalable, and user-friendly applications.</p>
-    
+
                         <p> I'm currently pursuing BSc (Hons) in CSDA at IIT Patna and actively honing my skills in Data
                             Structures & Algorithms (DSA), Web Development, and Competitive Programming.</p>
                     </div>
                 </div>
 
-                <!-- Project -->
-
-            <div class="about_container project_container" id="project_section">
-                <div class="head_box">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="input_field">https://projects.me</div>
-                    <div class="reload"><i class="ri-refresh-line"></i></div>
-                </div>
-                <div class="about_content">
-                    <h3>PROJECTS</h3>
-                    <div class="projects">
+            
+            <!-- project Updated -->
+    
+            <section class="projects-section" id="projects_section">
+                <header class="projects-header">
+                    <div class="project-circle circle-red"></div>
+                    <div class="project-circle circle-yellow"></div>
+                    <div class="project-circle circle-green"></div>
+                    <div class="project-url">https://projects.me</div>
+                    <button class="refresh-btn" aria-label="Reload projects">⟳</button>
+                </header>
+    
+                <div class="projects-content">
+                    <div class="projects-list">
+    
                         <!-- Project 1 -->
-
-                        <!-- <div class="project-card">
-                            <h4>🔐 Auth Dashboard</h4>
-                            <p>A full-stack authentication system with protected routes, JWT, and React UI.</p>
-                            <a href="https://github.com/your-github/auth-dashboard" target="_blank">View Project</a>
-                        </div> -->
-
-                        <!-- Project 2 -->
-
-                        <!-- <div class="project-card">
-                            <h4>📁 File Upload System</h4>
-                            <p>Upload and view files using Node.js, Express, MongoDB, and Cloudinary.</p>
-                            <a href="https://github.com/your-github/file-uploader" target="_blank">View Project</a>
-                        </div> -->
-
-                        
-                        <!-- Project 3 -->
-                        
-                        <div class="project-card">
-                            <h4>🧠 Codexa - Frontend CodeIDE</h4>
-                            <p>A web-based code editor with real-time output for HTML, CSS, and JavaScript. Designed to
-                                help developers write and preview frontend code efficiently.</p>
-                                <a href="https://github.com/Abhishek-69889/Frontend_IDE" target="_blank"
-                                class="project_links"><i class="ri-github-fill">Project Link</i></a>
-                            </div>
-
-                            <hr>
-
-                            <!-- Project 4 -->
+                        <article class="project-item">
+                            <h4 class="project-title">
+                                🧠 Codexa - Frontend CodeIDE
+                                <span class="project-duration">(March, 2025 - May, 2025)</span>
+                            </h4>
+                            <p class="project-description">
+                                A web-based code editor that allows users to write and preview HTML, CSS, and
+                                JavaScript code in real time. Designed to help developers build and test frontend
+                                code efficiently within the browser.
+                            </p>
+                            <p class="project-techstack"><strong>Tech Stack:</strong>Reactjs, Node.js, Express.js, MongoDB, JWT, Multer, dotenv</p>
+                            <a href="https://github.com/Abhishek-69889/Frontend_IDE" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                🔗 Project Link
+                            </a>
+                            <video controls class="project-video" aria-label="Demo video for PhotoUploader project">
+                                <source src="Codexa.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </article>
     
-                            <div class="project-card">
-                                <h4>🌐 Portfolio Website</h4>
-                                <p>This personal website built using HTML, CSS, and JavaScript to showcase my work.</p>
-                               <a href="https://github.com/Abhishek-69889/My-Portfolio" target="_blank"
-                                class="project_links"><i class="ri-github-fill">Project Link</i></a>
-                            </div>
+                        <!-- Project 2 -->
+                        <article class="project-item">
+                            <h4 class="project-title">
+                                📷 PhotoUploader - Cloudinary Image Upload
+                                <span class="project-duration">(April, 2025 - May, 2025)</span>
+                            </h4>
+                            <p class="project-description">
+                                This backend project enables users to upload images which are then stored securely
+                                on Cloudinary. It handles file uploads using Multer, secures sensitive data with
+                                environment variables, and maintains a clean, modular code structure.
+                            </p>
+                            <p class="project-techstack"><strong>Tech Stack:</strong> Reactjs, Node.js, Express.js, MongoDB, JWT, Multer,
+                                Cloudinary, dotenv</p>
+                            <a href="https://github.com/Abhishek-69889/PhotoUploader" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                🔗 Project Link
+                            </a>
+                            <video controls class="project-video" aria-label="Demo video for PhotoUploader project">
+                                <source src="PhotoUploader.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </article>
+    
+                        <!-- Project 3 -->
+                        <article class="project-item">
+                            <h4 class="project-title">
+                                🌐 Portfolio Website
+                                <span class="project-duration">(April 2024)</span>
+                            </h4>
+                            <p class="project-description">
+                                A personal website built to showcase my work, projects, and skills. The site
+                                features a responsive layout and interactive UI components for a smooth user
+                                experience.
+                            </p>
+                            <p class="project-techstack"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                            <a href="https://github.com/Abhishek-69889/My-Portfolio" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                🔗 Project Link
+                            </a>
+                        </article>
+    
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- Skill section -->
+
+        <div class="about_container skill_container" id="skill_section">
+            <div class="head_box skill_head_box">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="skill_container_head">
+                    <h4>Design.co</h4>
+                    <div>
+                        <h4>File</h4>
+                        <h4>Object</h4>
+                        <h4>Edit</h4>
                     </div>
                 </div>
             </div>
-    
+            <div class="about_content">
+                <h2 class="skilledIn">Skilled In </h2>
+                <section id="skills">
+                    <div class="skills-container">
+                        <!-- Web Development -->
+                        <div class="skill-card">
+                            <h3>Web Development</h3>
+                            <ul>
+                                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, Tailwind CSS</li>
+                                <li><strong>Backend:</strong> Node.js, Express.js, MongoDB, SQL, JWT (JSON Web
+                                    Tokens), Cookies, Bcrypt (password hashing), Cloudinary (Media/Image Upload & Management)</li>
+                                <li><strong>UI/UX:</strong> Responsive Design, CSS Animations, Modern Frameworks
+                                </li>
+                            </ul>
+                        </div>
 
-            </div>
+                        <!-- Software & Tools -->
+                        <div class="skill-card">
+                            <h3>Software & Tools</h3>
+                            <ul>
+                                <li><strong>Languages:</strong>Python & javascript</li>
+                                <li><strong>Version Control:</strong> Git & GitHub</li>
+                                <li><strong>Database:</strong> SQL & MongoDB</li>
+                                <li><strong>Security & Authentication:</strong> JWT, Cookie Management, Bcrypt</li>
+                                <li><strong>Software Development:</strong> Scalable & Maintainable Code</li>
+                            </ul>
+                        </div>
 
-            
-            
-
-            <!-- Skill section -->
-
-            <div class="about_container skill_container" id="skill_section">
-                <div class="head_box skill_head_box">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="skill_container_head">
-                        <h4>Design.co</h4>
-                        <div>
-                            <h4>File</h4>
-                            <h4>Object</h4>
-                            <h4>Edit</h4>
+                        <!-- Problem-Solving & Core CS -->
+                        <div class="skill-card">
+                            <h3>Problem-Solving & Core CS</h3>
+                            <ul>
+                                <li><strong>Data Structures & Algorithms (DSA)</strong></li>
+                                <li><strong>Core CS Concepts:</strong> OOP, OS, DBMS, Networking</li>
+                                <li><strong>Competitive Coding:</strong> Writing optimized solutions</li>
+                            </ul>
                         </div>
                     </div>
+                </section>
+            </div>
+        </div>
+
+
+            <!-- DSA links -->
+
+            <div class="about_container dsa_container" id="dsa_section">
+                <div class="head_box dsa_head_box">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+
+                    <!-- <div class="input_field">https://DsaWork.me</div>
+                        <div class="reload"><i class="ri-reset-left-fill"></i></div> -->
                 </div>
                 <div class="about_content">
-                    <h2 class="skilledIn">Skilled In </h2>
-                    <section id="skills">
-                        <div class="skills-container">
-                            <!-- Web Development -->
-                            <div class="skill-card">
-                                <h3>Web Development</h3>
-                                <ul>
-                                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, Tailwind CSS</li>
-                                    <li><strong>Backend:</strong> Node.js, Express.js, MongoDB, SQL, JWT (JSON Web
-                                        Tokens), Cookies, Bcrypt (password hashing)</li>
-                                    <li><strong>UI/UX:</strong> Responsive Design, CSS Animations, Modern Frameworks
-                                    </li>
-                                </ul>
-                            </div>
+                    <h3>DSA WORK</h3>
+                    <p>I have a strong foundation in Data Structures and Algorithms, constantly improving my
+                        problem-solving skills through competitive programming. I enjoy tackling challenging problems
+                        and optimizing solutions for efficiency.</p>
 
-                            <!-- Software & Tools -->
-                            <div class="skill-card">
-                                <h3>Software & Tools</h3>
-                                <ul>
-                                    <li><strong>Languages:</strong>Python & javascript</li>
-                                    <li><strong>Version Control:</strong> Git & GitHub</li>
-                                    <li><strong>Database:</strong> SQL & MongoDB</li>
-                                    <li><strong>Security & Authentication:</strong> JWT, Cookie Management, Bcrypt</li>
-                                    <li><strong>Software Development:</strong> Scalable & Maintainable Code</li>
-                                </ul>
-                            </div>
-
-                            <!-- Problem-Solving & Core CS -->
-                            <div class="skill-card">
-                                <h3>Problem-Solving & Core CS</h3>
-                                <ul>
-                                    <li><strong>Data Structures & Algorithms (DSA)</strong></li>
-                                    <li><strong>Core CS Concepts:</strong> OOP, OS, DBMS, Networking</li>
-                                    <li><strong>Competitive Coding:</strong> Writing optimized solutions</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+                    <p>Check out my profiles below to see my progress!</p>
+                    <div class="dsa-links">
+                        <a href="https://leetcode.com/u/abhishek_69889/" target="_blank" class="icon">
+                            <img src="leetcode.webp" alt="LeetCode">
+                        </a>
+                        <a href="https://www.geeksforgeeks.org/user/abhit99mh/?_gl=1*1nq2kzp*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwsJO4BhDoARIsADDv4vC_7dcIF-kmEgingTm2fkUawLvSDJcqyMX1xRjbxB2f6pOZacDCcsIaAsJBEALw_wcB"
+                            target="_blank" class="icon" class="gfg">
+                            <img src="gfg-removebg-preview.png" alt="GeeksforGeeks">
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -215,7 +273,8 @@
                 <div class="about_content">
                     <h3>ACHIEVEMENTS</h3>
                     <ul class="achievement_list">
-                        <li>👨‍💻 Participated in Hack N Tech – a 24-hour hackathon organized by the Technology Club, IIT Patna, showcasing problem-solving and teamwork</li>
+                        <li>👨‍💻 Participated in Hack N Tech – a 24-hour hackathon organized by the Technology Club,
+                            IIT Patna, showcasing problem-solving and teamwork</li>
                         <li>🥇 Solved 250+ DSA problems on platforms like LeetCode and GFG</li>
                         <li>🎓 Achieved Dean’s List honors for both semesters of Year 1 at IIT Patna</li>
                         <li>🥇 Secured 50-Day Coding Streak Badge on LeetCode in 2025</li>
@@ -257,37 +316,9 @@
             </div>
 
 
+
+
             
-            
-                <!-- DSA links -->
-    
-                <div class="about_container dsa_container" id="dsa_section">
-                    <div class="head_box dsa_head_box">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-    
-                        <!-- <div class="input_field">https://DsaWork.me</div>
-                        <div class="reload"><i class="ri-reset-left-fill"></i></div> -->
-                    </div>
-                    <div class="about_content">
-                        <h3>DSA WORK</h3>
-                        <p>I have a strong foundation in Data Structures and Algorithms, constantly improving my
-                            problem-solving skills through competitive programming. I enjoy tackling challenging problems
-                            and optimizing solutions for efficiency.</p>
-    
-                        <p>Check out my profiles below to see my progress!</p>
-                        <div class="dsa-links">
-                            <a href="https://leetcode.com/u/abhishek_69889/" target="_blank" class="icon">
-                                <img src="leetcode.webp" alt="LeetCode">
-                            </a>
-                            <a href="https://www.geeksforgeeks.org/user/abhit99mh/?_gl=1*1nq2kzp*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwsJO4BhDoARIsADDv4vC_7dcIF-kmEgingTm2fkUawLvSDJcqyMX1xRjbxB2f6pOZacDCcsIaAsJBEALw_wcB"
-                                target="_blank" class="icon" class="gfg">
-                                <img src="gfg-removebg-preview.png" alt="GeeksforGeeks">
-                            </a>
-                        </div>
-                    </div>
-                </div>
         </main>
     </section>
 </body>

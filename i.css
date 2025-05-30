@@ -1,0 +1,198 @@
+/* Custom colors */
+:root {
+  --color-sienna: #b64809;
+  --color-saddle-brown: #853304;
+  --color-antique-white: #f6ebd5;
+  --color-white-2: #fcf6e8;
+  --color-sienna-dark: #b64707;
+  --color-dark-slate-blue: #204476;
+  --color-olive-drab: #4d820c;
+  --color-sandy-brown: #e8a66d;
+  --color-wheat: #f8dfae;
+  --color-cornflower-blue: #85ade5;
+  --color-light-green: #c7e99b;
+  --color-royal-blue: #375f97;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --bg-color: var(--color-antique-white);
+  --card-bg: var(--color-white);
+  --text-primary: var(--color-saddle-brown);
+  --text-secondary: var(--color-sienna-dark);
+  --accent-red: var(--color-sienna);
+  --accent-yellow: var(--color-sandy-brown);
+  --accent-green: var(--color-light-green);
+  --link-color: var(--color-royal-blue);
+  --box-shadow: rgba(134, 109, 80, 0.15);
+}
+
+
+
+/* Container */
+.projects-section {
+  width: 500px;
+  height: auto; /* Allow height to grow based on content */
+  border-radius: 30px;
+  border-left: 3px solid var(--color-saddle-brown);
+  border-top: 3px solid var(--color-saddle-brown);
+  border-right: 6px solid var(--color-saddle-brown);
+  border-bottom: 6px solid var(--color-saddle-brown);
+  /* margin-left: 600px; */
+
+  /* Retain existing values for styling */
+  padding: 24px 32px;
+  background-color: var(--antique-white);
+  box-shadow: 0 12px 30px var(--box-shadow);
+}
+
+
+/* Header */
+.projects-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.project-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.circle-red {
+  background: var(--accent-red);
+}
+
+.circle-yellow {
+  background: var(--accent-yellow);
+}
+
+.circle-green {
+  background: var(--accent-green);
+}
+
+.project-url {
+  flex-grow: 1;
+  background: var(--color-white-2);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  user-select: all;
+  color: var(--text-secondary);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+  overflow-wrap: anywhere;
+}
+
+.refresh-btn {
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.refresh-btn:hover {
+  color: var(--link-color);
+}
+
+/* Content */
+.projects-content h3.projects-title {
+  margin-bottom: 22px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+/* Projects list flex container */
+.projects-list {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 14px;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+.projects-list::-webkit-scrollbar {
+  height: 8px;
+}
+.projects-list::-webkit-scrollbar-thumb {
+  background-color: var(--color-sandy-brown);
+  border-radius: 6px;
+}
+.projects-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Individual project card */
+.project-item {
+  flex: 0 0 320px;
+  background-color: var(--antique-white);
+  border-radius: 14px;
+  padding: 24px 20px 30px 20px;
+  box-shadow: 0 8px 20px var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--text-secondary);
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(134, 109, 80, 0.25);
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.project-duration {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.project-description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.project-techstack strong {
+  color: var(--text-primary);
+}
+
+.project-link {
+  margin-top: auto;
+  font-weight: 600;
+  color: var(--link-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: var(--color-dark-slate-blue);
+}
+
+/* Video styling */
+.project-video {
+  width: 100%;
+  border-radius: 14px;
+  margin-top: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
