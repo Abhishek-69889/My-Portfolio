@@ -187,12 +187,4 @@
   color: var(--color-dark-slate-blue);
 }
 
-/* Video styling */
-.project-video {
-  width: 100%;
-  border-radius: 14px;
-  margin-top: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
 
