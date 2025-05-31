@@ -1,8 +1,8 @@
 @media (min-width:320px) and (max-width:600px) {
-    .logo{
+    .logo {
         font-size: 5vw;
     }
-   
+
     .header_ul {
         flex-direction: column;
         position: absolute;
@@ -15,6 +15,7 @@
         border: 2px solid var(--saddle-brown);
         border-radius: 0 0 10px 10px;
     }
+
     .header_ul.active {
         width: 100%;
         height: auto;
@@ -25,30 +26,32 @@
         z-index: 1000;
         top: 0;
     }
+
     .header_ul.inactive {
         display: none;
     }
 
-    .header_ul.active .cross{
+    .header_ul.active .cross {
         display: flex;
     }
 
     .second_head i {
         display: block;
     }
-    
-    
-    ul li a{
+
+
+    ul li a {
         font-size: 4vw;
         /* gap: 10px; */
 
     }
-    .second_head i{
+
+    .second_head i {
         font-size: 4vw;
         display: flex;
     }
 
-    
+
     #main_body {
         display: flex;
         flex-direction: column;
@@ -59,24 +62,24 @@
         height: auto;
         margin-left: 20px;
         margin-top: 30px;
-        
+
     }
 
-    .skill_container_head{
+    .skill_container_head {
         padding: 10px;
         font-size: 3vw;
     }
 
-    .skill_container_head div{
+    .skill_container_head div {
         font-size: 3vw;
     }
 
     .skill_container {
         height: auto;
-        
+
     }
 
-    .skill-card{
+    .skill-card {
         width: auto;
     }
 
@@ -84,7 +87,7 @@
         font-size: 4vw;
     }
 
-    .circle{
+    .circle {
         padding: 10px;
     }
 
@@ -105,18 +108,31 @@
         font-size: 3vw;
         padding-left: 20px;
     }
-    .about_content{
+
+    .about_content {
         margin-top: 0;
     }
 
-    .about_dsa_combine{
+    .about_dsa_combine {
         display: flex;
         flex-direction: column;
     }
-    .projects-list{
-        display: flex;
-        flex-direction: column;
-    }
+
+    .projects-section {
+    padding: 16px;
+    width: 90%;
+  }
+
+  .projects-list {
+    flex-direction: column;
+    gap: 16px;
+    overflow-x: unset; /* removes horizontal scroll on mobile */
+  }
+
+  .project-item {
+    flex: 1 1 auto;
+    width: 100%;
+  }
 }
 
 
@@ -135,6 +151,7 @@
         border: 2px solid var(--saddle-brown);
         border-radius: 0 0 10px 10px;
     }
+
     .header_ul.active {
         width: 100%;
         height: auto;
@@ -145,30 +162,33 @@
         z-index: 1000;
         top: 0;
     }
+
     .header_ul.inactive {
         display: none;
     }
 
-    .header_ul.active .cross{
+    .header_ul.active .cross {
         display: flex;
     }
 
     .second_head i {
         display: block;
     }
-    
-    
-    ul li a{
+
+
+    ul li a {
         font-size: 4vw;
         /* gap: 10px; */
 
     }
-    .second_head i{
+
+    .second_head i {
         font-size: 4vw;
         display: flex;
     }
+
     /* main.../ */
-    #main_body{
+    #main_body {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -177,23 +197,26 @@
         padding: 0;
     }
 
-    .about_container{
+    .about_container {
         width: 70vw;
-        margin:0px ;
+        margin: 0px;
         margin-top: 20px;
         height: auto;
         /* padding: 0; */
     }
+
     .skill_container {
         height: auto;
-        
+
     }
+
     .skills-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         /* gap: 20px; */
     }
+
     .link_container_content p {
         padding: 15px;
         font-size: 2.2vw;
@@ -205,17 +228,20 @@
         font-size: 4vw;
         /* padding-left: 20px; */
     }
-    .about_dsa_combine{
+
+    .about_dsa_combine {
         display: flex;
         flex-direction: column;
     }
-    .projects-list{
+
+    .projects-list {
         display: flex;
         flex-direction: column;
     }
 }
 
 @media (min-width:769px) and (max-width:1000px) {
+
     /* head.. */
     .header_ul {
         flex-direction: column;
@@ -229,6 +255,7 @@
         border: 2px solid var(--saddle-brown);
         border-radius: 0 0 10px 10px;
     }
+
     .header_ul.active {
         width: 100%;
         height: auto;
@@ -239,30 +266,33 @@
         z-index: 1000;
         top: 0;
     }
+
     .header_ul.inactive {
         display: none;
     }
 
-    .header_ul.active .cross{
+    .header_ul.active .cross {
         display: flex;
     }
 
     .second_head i {
         display: block;
     }
-    
-    
-    ul li a{
+
+
+    ul li a {
         font-size: 4vw;
         /* gap: 10px; */
 
     }
-    .second_head i{
+
+    .second_head i {
         font-size: 4vw;
         display: flex;
     }
+
     /* main.../ */
-    #main_body{
+    #main_body {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -271,23 +301,26 @@
         padding: 0;
     }
 
-    .about_container{
+    .about_container {
         width: 70vw;
-        margin:0px ;
+        margin: 0px;
         margin-top: 20px;
         height: auto;
         /* padding: 0; */
     }
+
     .skill_container {
         height: auto;
-        
+
     }
+
     .skills-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         /* gap: 20px; */
     }
+
     .link_container_content p {
         padding: 15px;
         font-size: 2vw;
@@ -299,18 +332,20 @@
         font-size: 3vw;
         /* padding-left: 20px; */
     }
-    .about_dsa_combine{
+
+    .about_dsa_combine {
         display: flex;
         flex-direction: column;
     }
-    .projects-list{
+
+    .projects-list {
         display: flex;
         flex-direction: column;
     }
 }
 
 @media (min-width:1001px) and (max-width:1200px) {
-    #main_body{
+    #main_body {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -319,17 +354,18 @@
         padding: 0;
     }
 
-    .about_container{
+    .about_container {
         width: 70vw;
-        margin:0px ;
+        margin: 0px;
         margin-top: 20px;
         /* padding: 0; */
     }
+
     .skill_container {
         height: auto;
-        
+
     }
-    
+
     .link_container_content p {
         padding: 15px;
         font-size: 2.2vw;
@@ -430,8 +466,3 @@
         width: 3vw;
     }
 }
-
-
-
-
-

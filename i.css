@@ -28,21 +28,19 @@
 
 
 
-/* Container */
 .projects-section {
-  width: 500px;
-  height: auto; /* Allow height to grow based on content */
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   border-radius: 30px;
   border-left: 3px solid var(--color-saddle-brown);
   border-top: 3px solid var(--color-saddle-brown);
   border-right: 6px solid var(--color-saddle-brown);
   border-bottom: 6px solid var(--color-saddle-brown);
-  /* margin-left: 600px; */
-
-  /* Retain existing values for styling */
   padding: 24px 32px;
   background-color: var(--antique-white);
   box-shadow: 0 12px 30px var(--box-shadow);
+  margin: 0 auto; /* center it on all screen sizes */
 }
 
 
